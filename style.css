@@ -1,3 +1,4 @@
+/* Global and resusable styling */
 * {
     font-family: 'Poppins', sans-serif;
 }
@@ -25,7 +26,7 @@ body {
     color: rgb(199, 53, 248),
 }
 
-/* Header section start */
+/* Header section styling */
 
 .header-section {
     position: relative;
@@ -37,8 +38,7 @@ body {
     margin-top: 1rem;
 }
 
-nav,
-nav ul {
+nav, nav ul {
     list-style-type: none;
     font-size: large;
 }
@@ -117,10 +117,6 @@ nav li:hover {
     font-size: smaller;
 }
 
-.align-center {
-    align-self: center;
-}
-
 .trending-info {
     margin-left: 1rem;
 }
@@ -160,7 +156,6 @@ nav li:hover {
 }
 
 .mini-post {
-    display: flex;
     margin: 1rem;
     width: 25%;
 }
@@ -219,7 +214,6 @@ nav li:hover {
 .main-section {
     margin: auto;
     margin-top: 1rem;
-    display: flex;
 }
 
 .main-section h4 {
@@ -341,6 +335,5 @@ nav li:hover {
         background-color: rgb(255, 255, 255);
         padding-inline: 0;
     }
-    
 }   
 /* End of main section */
