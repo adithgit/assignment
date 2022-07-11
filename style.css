@@ -9,20 +9,23 @@ body {
     margin-inline: auto;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-.color1{
+.color1 {
     color: rgb(225, 0, 255);
 }
-.color2{
+
+.color2 {
     color: rgb(0, 98, 255)
 }
-.color3{
-    color:rgb(119, 122, 255)
+
+.color3 {
+    color: rgb(119, 122, 255)
 }
-.color4{
+
+.color4 {
     color: rgb(199, 53, 248),
 }
 
@@ -38,9 +41,11 @@ body {
     margin-top: 1rem;
 }
 
-nav, nav ul {
+nav,
+nav ul {
     list-style-type: none;
     font-size: large;
+
 }
 
 li img {
@@ -73,6 +78,23 @@ nav li:hover {
     cursor: pointer;
 }
 
+.menu-button {
+    display: none;
+}
+
+.menu-button:hover {
+    scale: 1.1;
+    color: rgb(119, 119, 255);
+}
+
+.menu-open {
+    transition: all 0.2s;
+    height: 100vh !important;
+    width: 35vw !important;
+    opacity: 1 !important;
+}
+
+
 @keyframes image-animate {
     from {
         transform: rotate(0deg);
@@ -84,6 +106,37 @@ nav li:hover {
 }
 
 @media (max-width: 1080px) {
+
+    ul li {
+        margin-top: 1rem;
+    }
+    .menu-closed a:hover{
+        color: red;
+    }
+    .menu-closed {
+        opacity: 0;
+        flex-direction: column;
+        position: fixed;
+        padding: 1rem;
+        top: -1.1rem;
+        left: 0;
+        width: 0vw;
+        height: 100vh;
+        z-index: 10;
+        background: rgba(233, 233, 233, 0.9);
+        border-radius: 20px;
+        -webkit-transition: width 0.2s linear;
+        -moz-transition: width 0.2s linear;
+        -o-transition: width 0.2s linear;
+        transition: all 0.2s linear;
+    }
+
+    .menu-button {
+        display: block;
+        align-self: center;
+        margin-inline-end: 2rem;
+    }
+
     body {
         padding-inline: 1rem;
     }
@@ -93,14 +146,12 @@ nav li:hover {
         justify-content: flex-end;
     }
 
-    nav li {
-        display: none;
-    }
 
     .search-icon img {
         position: static;
     }
 }
+
 /* End of header section */
 
 /* Start of Trending section */
@@ -142,7 +193,14 @@ nav li:hover {
     .header-toast {
         width: auto;
     }
+
+    ul li {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
 }
+
 /* End of Toast Section */
 
 /* Start of mini section */
@@ -187,6 +245,7 @@ nav li:hover {
     .mini-post {
         width: 40%;
     }
+
     .mini-section {
         flex-wrap: wrap;
     }
@@ -198,15 +257,18 @@ nav li:hover {
         justify-content: center;
         width: 100%;
     }
-    .mini-section div:nth-child(1){
+
+    .mini-section div:nth-child(1) {
         display: flex;
     }
+
     .mini-img img {
         width: 80px;
         height: 80px;
         margin-inline: 1rem;
     }
 }
+
 /* End of mini section */
 
 /* start of main section */
@@ -242,7 +304,8 @@ nav li:hover {
     position: relative;
 }
 
-.left-main, .right-main {
+.left-main,
+.right-main {
     width: 25%;
 }
 
@@ -281,16 +344,19 @@ nav li:hover {
 }
 
 @media (max-width: 1080px) {
-    .main-section{
+    .main-section {
         flex-direction: column;
     }
-    .center-main{
+
+    .center-main {
         font-size: medium;
         margin: auto;
         width: 80%;
         order: 1;
     }
-    .right-main, .left-main{
+
+    .right-main,
+    .left-main {
         display: flex;
         flex-direction: row;
         width: 100%;
@@ -299,41 +365,51 @@ nav li:hover {
 }
 
 @media (max-width: 620px) {
-    .center-main{
+    .center-main {
         margin: auto;
         width: 100%;
         order: 1;
     }
-    .main-post{
+
+    .main-post {
         margin: 0;
         margin-bottom: 1rem;
     }
-    .right-main, .left-main{
+
+    .right-main,
+    .left-main {
         font-size: smaller;
         flex-direction: column;
         width: 100%;
         order: 3;
     }
-    .side-post .shadow{
+
+    .side-post .shadow {
         display: none;
     }
-    .side-post img{
+
+    .side-post img {
         width: 100px;
         height: 100px;
     }
-    .side-post{
+
+    .side-post {
         display: flex;
     }
-    .side-post .main-info{
+
+    .side-post .main-info {
         color: #000000;
         position: static;
     }
-    .side-post .publish-info{
+
+    .side-post .publish-info {
         display: none;
     }
+
     .side-post .tag {
         background-color: rgb(255, 255, 255);
         padding-inline: 0;
     }
-}   
+}
+
 /* End of main section */

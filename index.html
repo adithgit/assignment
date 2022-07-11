@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2deded43b2.js" crossorigin="anonymous"></script>
     <title>Atlas</title>
 </head>
 
@@ -17,16 +19,22 @@
     <!-- Header section start -->
     <header>
         <div class="header-section">
-            <div class="page-title">
+            <div class="page-title flex">
+                <a href="#" class="menu-button" onclick="openMenu()">
+                    <i class="fa-solid fa-x"></i>
+                </a>
                 <h2>Atlas</h2>
             </div>
-            <nav class="flex">
+            <nav class="flex" >
                 <div class="nav-links">
-                    <ul class="flex">
+                    <ul class="flex menu-closed" id="menu">
+                        <a href="#" class="menu-button" onclick="closeMenu()">
+                            <i class="fa-solid fa-x"></i> 
+                        </a>
                         <li> Reviews</li>
-                        <li>News <img src="./images/down.png" alt="click to expand"></li>
-                        <li>Random <img src="./images/down.png" alt="click to expand"></li>
-                        <li>Fashion <img src="./images/down.png" alt="click to expand"></li>
+                        <li>News <img class="down-img" src="./images/down.png" alt="click to expand"></li>
+                        <li>Random <img class="down-img" src="./images/down.png" alt="click to expand"></li>
+                        <li>Fashion <img class="down-img" src="./images/down.png" alt="click to expand"></li>
                     </ul>
                 </div>
                 <div class="search-icon">
@@ -149,7 +157,7 @@
             </div>
         </div>
         <div class="right-main">
-            
+
             <div class="main-post side-post">
                 <div class="img-main">
                     <img src="./images/main5.jpg" alt="">
@@ -160,7 +168,7 @@
                     <h4 class="main-title">How loverly yellow is! It stands for the sun</h4>
                     <span class="publish-info">about a year ago.</span>
                 </div>
-            </div> 
+            </div>
             <div class="main-post side-post">
                 <div class="img-main">
                     <img src="./images/main5.jpg" alt="">
@@ -176,4 +184,5 @@
     </section>
     <!-- Main content section end -->
 </body>
+
 </html>
