@@ -108,7 +108,7 @@ nav li:hover {
 @media (max-width: 1080px) {
 
     ul li {
-        margin-top: 1rem;
+        margin-top: 3rem;
     }
     .menu-closed a:hover{
         color: red;
